@@ -24,6 +24,7 @@ public class PersonaController {
      public String getCurrentTime() {
 
         return Instant.now().toString();
+       
     }
     
     @GetMapping ("/personas/traer")
