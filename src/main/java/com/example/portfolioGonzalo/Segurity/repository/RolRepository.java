@@ -2,13 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package com.example.portfolioGonzalo.Repocitory;
+package com.example.portfolioGonzalo.Segurity.repository;
 
-import com.example.portfolioGonzalo.model.Persona;
+import com.example.portfolioGonzalo.Segurity.entity.Rol;
+import com.example.portfolioGonzalo.Segurity.enums.RolNombre;
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
 @Repository
-public interface PersonaRepository extends JpaRepository <Persona, Long> {
-    
-    
+public interface RolRepository extends JpaRepository<Rol, Integer>{
+    Optional<Rol> findByRolNombre(RolNombre rolNombre);
 }

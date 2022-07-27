@@ -4,15 +4,17 @@
  */
 package com.example.portfolioGonzalo.interfaces;
 
-import com.example.portfolioGonzalo.model.Persona;
+import com.example.portfolioGonzalo.model.Skill;
 import java.util.List;
 
-
-public interface IPersonaService {
-    public List<Persona> getPersonas();
-    public void savePersona(Persona perso);
-    public void deletePersona(Long id);
-    public Persona findPersona(Long id);
-    
+/**
+ *
+ * @author gonza
+ */
+public interface ISkillService {
+    public List<Skill> getSkill();
+    public void saveSkill(Skill skill);
+    public void deleteSkill(Long id);
+    public Skill findSkill(Long id);
     
 }

@@ -4,34 +4,28 @@
  */
 package com.example.portfolioGonzalo.model;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import lombok.Getter;
 import lombok.Setter;
-
 import org.springframework.data.annotation.Id;
 
+/**
+ *
+ * @author gonza
+ */
 @Getter
 @Setter
 @Entity
-public class Persona {
-
+public class Skill implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE)
     @javax.persistence.Id
     private Long id;
-    private String nombre;
-    private String apellido;
-    private int edad;
-    private String email;
-    private Long tel;
-    private String provincia;
-    private String ciudad;
-    private String pais;
-
-    public Persona() {
-    }
-
+    private String habilidad;
+    private int porcentaje;
+    
     
 }

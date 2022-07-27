@@ -4,15 +4,15 @@
  */
 package com.example.portfolioGonzalo.interfaces;
 
-import com.example.portfolioGonzalo.model.Persona;
+import com.example.portfolioGonzalo.model.Experiencia;
 import java.util.List;
 
 
-public interface IPersonaService {
-    public List<Persona> getPersonas();
-    public void savePersona(Persona perso);
-    public void deletePersona(Long id);
-    public Persona findPersona(Long id);
+public interface IExperienciaService {
+    public List<Experiencia> getExperiencia();
+    public void saveExperiencia(Experiencia expe);
+    public void deleteExperiencia(Long id);
+    public Experiencia findExperiencia(Long id);
     
     
 }

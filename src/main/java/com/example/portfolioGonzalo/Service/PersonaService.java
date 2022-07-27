@@ -2,8 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.example.portfolioGonzalo;
+package com.example.portfolioGonzalo.Service;
 
+import com.example.portfolioGonzalo.model.Persona;
+import com.example.portfolioGonzalo.Repocitory.PersonaRepository;
+import com.example.portfolioGonzalo.interfaces.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

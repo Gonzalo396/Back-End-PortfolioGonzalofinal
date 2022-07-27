@@ -9,29 +9,24 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import lombok.Getter;
 import lombok.Setter;
-
 import org.springframework.data.annotation.Id;
 
+/**
+ *
+ * @author gonza
+ */
 @Getter
 @Setter
 @Entity
-public class Persona {
-
+public class Proyectos {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE)
     @javax.persistence.Id
     private Long id;
-    private String nombre;
-    private String apellido;
-    private int edad;
-    private String email;
-    private Long tel;
-    private String provincia;
-    private String ciudad;
-    private String pais;
-
-    public Persona() {
-    }
-
+    private String proyecto;
+    private String descripcionProyecto;
+    private String url;
+    private String fecha;
+    
     
 }
